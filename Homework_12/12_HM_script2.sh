@@ -20,7 +20,7 @@ apt install -y rsync
 #Check the correct work of installing services
 echo "${GREEN} Checking the running service ${BLACK}"
 
-if  service --status-all | grep ssh | grep [+]
+if  service --status-all | grep ssh | grep "[+]"
         then
                 echo  "${GREEN} SSH is running ${BLACK}"
         else

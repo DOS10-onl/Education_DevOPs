@@ -34,7 +34,7 @@ fallocate -l 1M /home/vagrant/folder1/test5.txt
 #Check the correct work of installing services
 echo "${GREEN} Checking the running service ${BLACK}"
 
-if  service --status-all | grep ssh | grep [+]  
+if  service --status-all | grep ssh | grep "[+]"  
 	then 
 		echo  "${GREEN} SSH is running ${BLACK}" 
 	else
@@ -42,7 +42,7 @@ if  service --status-all | grep ssh | grep [+]
 
 fi
 
-if  service --status-all | grep rsync | grep [+] 
+if  service --status-all | grep rsync | grep "[+]" 
 	then 
                 echo  "${GREEN} RSYNC is running ${BLACK}" 
         else

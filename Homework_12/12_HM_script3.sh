@@ -1,4 +1,4 @@
-#!/usr/bin/expect -f
+#!/bin/bash
 
 #Generating SSH keys and connect to Server VM on SSH key
 
@@ -12,11 +12,11 @@ send "\r"
 expect "Enter same passphrase again:"
 send "\r"
 
-set timeout 2
+sleep 2
 
 expect "The key's randomart image is:"
 
-set timeout 5
+sleep 5
 
 spawn ssh-copy-id vagrant@192.168.53.3
 expect "Are you sure you want to continue connecting"
